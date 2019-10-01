@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|PT+Serif&display=swap');
 body {
   background-color: lightgrey;
 }
 .stories {
   text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2em;
+  max-width: 60em;
+  margin: auto;
 }
 .news {
   background-color: white;
@@ -10,10 +16,38 @@ body {
   overflow: hidden;
   max-width: 30em;
   margin: 1em 0;
+  text-align: left;
+  margin-right: 20;
+  box-shadow: 3px 3px 2em rgba(0, 0, 0, .5);
+
+  border-radius: 0.5em;
 }
 .news-lead {
   text-align: center;
 }
 .news-img {
   max-width: 100%;
+}
+.text {
+  padding: 0 1em;
+}
+h1 {
+  text-align: center;
+}
+h1, h2 {
+  font-family: "Montserrat", sans-serif;
+}
+p {
+  font-family: 'PT Serif', serif;
+}
+.button {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  text-decoration: none; 
+  text-align: center;
+  background-color: rgb(247, 6, 6);
+  color: #ffffff;
+  padding: 0.3em 0em;
 }
